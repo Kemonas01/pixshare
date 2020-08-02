@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+  <title>pixshare</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="columns pt-2 bg-success">
+      <div class="column col-6">
+        <h1>pixshare <small class="h5 hide-md">picture sharing made easy...</small></h1>
+      </div>
+
+      <div class="column col-6 text-right">
+        <label>
+          <i class="icon icon-3x icon-upload"></i>
+          <input name="image" type="file" accept="image/jpeg, image/png, image/gif" style="display: none">
+        </label>
+      </div>
+    </div>
+
+    <div class="columns mt-2">
+      <div class="column col-6 col-md-12">
+        <h2>file list</h2>
+        <ul>
+        </ul>
+      </div>
+      <div class="column col-6 col-md-12">
+        <h2>preview</h2>
+        <figure>
+          <img src="" class="img-responsive">
+          <figcaption></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+
+</html>
